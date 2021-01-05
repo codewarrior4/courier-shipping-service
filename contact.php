@@ -25,6 +25,21 @@
         <meta name="twitter:url" content="https://<?php echo $_SERVER['HTTP_HOST'] ?>"/>
         <meta name="twitter:card" content="summary"/>
         <meta name="twitter:description" content="EMG shipping services is a leading logistics and distribution services company established in 2018. We offer a wide array of express courier and logistic support solutions to our various customers"/>
+        <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-3.3.6/css/bootstrap.min.css">        
+        <!-- Bootstrap Select Css -->
+        <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-select-1.10.0/dist/css/bootstrap-select.min.css">
+        <!-- Fonts Css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/plugins/font-elegant/elegant.css">
+        <!-- OwlCarousel2 Slider Css -->
+        <link rel="stylesheet" type="text/css" href="assets/plugins/owl.carousel.2/assets/owl.carousel.css">
+
+
+        <!-- Animate Css -->       
+        <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+        <!-- Main Css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
     </head>
     <body id="home">
 

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="shortcut icon" href="assets/img/logo/logo.png" type="image/x-icon">
+        <link rel="shortcut icon" href="assets/image/logo/logo.png" type="image/x-icon">
         <!-- Bootstrap Css -->
         <meta name="description" content="EMG shipping services is a leading logistics and distribution services company established in 2018. We offer a wide array of express courier and logistic support solutions to our various customers">
 
@@ -15,7 +15,7 @@
         <meta property="og:title" content="EMG Shipping Services">
         <meta property="og:description" content="EMG shipping services is a leading logistics and distribution services company established in 2018. We offer a wide array of express courier and logistic support solutions to our various customers ">
         <meta property="og:site_name" content="EMG Shipping Services">
-        <meta property="og:image" content="<?php echo $_SERVER['HTTP_HOST']?>/assets/img/logo/logo.png">
+        <meta property="og:image" content="<?php echo $_SERVER['HTTP_HOST']?>/assets/logo/logo.png">
         <meta property="og:image:width" content="1500"/>
         <meta property="og:image:height" content="249"/>
         <meta itemprop="name" content="EMG Shipping Services"/>
@@ -25,6 +25,21 @@
         <meta name="twitter:url" content="https://<?php echo $_SERVER['HTTP_HOST'] ?>"/>
         <meta name="twitter:card" content="summary"/>
         <meta name="twitter:description" content="EMG shipping services is a leading logistics and distribution services company established in 2018. We offer a wide array of express courier and logistic support solutions to our various customers"/>
+        <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-3.3.6/css/bootstrap.min.css">        
+        <!-- Bootstrap Select Css -->
+        <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-select-1.10.0/dist/css/bootstrap-select.min.css">
+        <!-- Fonts Css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/plugins/font-elegant/elegant.css">
+        <!-- OwlCarousel2 Slider Css -->
+        <link rel="stylesheet" type="text/css" href="assets/plugins/owl.carousel.2/assets/owl.carousel.css">
+
+
+        <!-- Animate Css -->       
+        <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+        <!-- Main Css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
     </head>
     <body id="home">
 
