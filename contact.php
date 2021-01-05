@@ -5,28 +5,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel="shortcut icon" href="assets/image/logo/logo.png" type="image/x-icon">
         <!-- Bootstrap Css -->
-        <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-3.3.6/css/bootstrap.min.css">        
-        <!-- Bootstrap Select Css -->
-        <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-select-1.10.0/dist/css/bootstrap-select.min.css">
-        <!-- Fonts Css -->
-        <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="assets/plugins/font-elegant/elegant.css">
-        <!-- OwlCarousel2 Slider Css -->
-        <link rel="stylesheet" type="text/css" href="assets/plugins/owl.carousel.2/assets/owl.carousel.css">
+        <meta name="description" content="EMG shipping services is a leading logistics and distribution services company established in 2018. We offer a wide array of express courier and logistic support solutions to our various customers">
 
-
-        <!-- Animate Css -->       
-        <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-
-        <!-- Main Css -->
-        <link rel="stylesheet" type="text/css" href="assets/css/theme.css">
-
-
-        <!--[if lt IE 9]>
-        <script src="assets/plugins/iesupport/html5shiv.js"></script>
-        <script src="assets/plugins/iesupport/respond.js"></script>
-        <![endif]-->
+        <meta name="keywords" content="Courier Services, emg, shipping,shipping services,emg services,smg shipping services Logistics, mailroom , warehousing , best courier service in Nigeria, logistics company in Nigeria, ecommerce delivery, ecommerce courier service ,local shipment, international shipment, same day delivery , logistics support, konga delivery, jumia delivery , delivery services, delivery service for ecommerce, ecommerce delivery in Nigeria , deal dey delivery, Nigeria logistics company,">
+        <link rel="pingback" href="xmlrpc.php">
+        <meta property="og:url" content="https://<?php echo $_SERVER['HTTP_HOST'] ?>">
+        <meta property="og:title" content="EMG Shipping Services">
+        <meta property="og:description" content="EMG shipping services is a leading logistics and distribution services company established in 2018. We offer a wide array of express courier and logistic support solutions to our various customers ">
+        <meta property="og:site_name" content="EMG Shipping Services">
+        <meta property="og:image" content="<?php echo $_SERVER['HTTP_HOST']?>/assets/logo/logo.png">
+        <meta property="og:image:width" content="1500"/>
+        <meta property="og:image:height" content="249"/>
+        <meta itemprop="name" content="EMG Shipping Services"/>
+        <meta itemprop="url" content="https://<?php echo $_SERVER['HTTP_HOST'] ?>"/>
+        <meta itemprop="description" content="Courier Services, emg, shipping,shipping services,emg services,smg shipping services Logistics, mailroom , warehousing , best courier service in Nigeria, logistics company in Nigeria, ecommerce delivery, ecommerce courier service ,local shipment, international shipment, same day delivery , logistics support, konga delivery, jumia delivery , delivery services, delivery service for ecommerce, ecommerce delivery in Nigeria , deal dey delivery, Nigeria logistics company,"/>
+        <meta name="twitter:title" content="EMG Shipping Services"/>
+        <meta name="twitter:url" content="https://<?php echo $_SERVER['HTTP_HOST'] ?>"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:description" content="EMG shipping services is a leading logistics and distribution services company established in 2018. We offer a wide array of express courier and logistic support solutions to our various customers"/>
     </head>
     <body id="home">
 
