@@ -75,7 +75,7 @@
                 <!-- /.Banner -->
 
                 <!-- Track Product -->
-                <section>
+                <!-- <section>
                     <div class="theme-container container">               
                         <div class="row">
                             <div class="col-md-8 col-md-offset-2 track-prod clrbg-before wow slideInUp" data-wow-offset="50" data-wow-delay=".20s">     
@@ -97,7 +97,7 @@
                             </div>                        
                         </div>
                     </div>
-                </section>
+                </section> -->
                 <!-- /.Track Product -->
 
                 <!-- About Us -->
@@ -136,7 +136,7 @@
                             </div>
                             <div class="col-md-6 text-center">
                                 <div class="pb-80 visible-lg"></div>
-                                <img alt="" src="assets/img/block/image4.jpeg" class="wow slideInRight" data-wow-offset="50" data-wow-delay=".20s" />
+                                <img alt="" src="assets/img/logo/image2.jpeg" class="wow slideInRight" data-wow-offset="50" data-wow-delay=".20s" />
                             </div>
                         </div>
                     </div>
