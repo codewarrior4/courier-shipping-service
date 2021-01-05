@@ -36,7 +36,6 @@
 		<title>EMG Shipping Services - Add Package</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="summernote/summernote.css">
 		<!-- Icomoon Font Icons css -->
         <link rel="stylesheet" href="fonts/style.css">
         
@@ -94,49 +93,49 @@
 								</div>
 								
 								<div class="card-body">
-									<form onsubmit="add()"  enctype="multipart/form-data">
+									<form id="create" enctype="multipart/form-data">
 										<fieldset>
 											<legend>Package Information</legend>
 												<div class="form-group row">
 													<label for="staticEmail" class="col-sm-2 col-form-label">Package Name</label>
 													<div class="col-sm-10">
-														<input type="text" required id="pname"  class="form-control" >
+														<input type="text" required id="pname" name="pname"  class="form-control" >
 													</div>
 												</div>
 												<div class="form-group row">
 													<label for="staticEmail" class="col-sm-2 col-form-label">Package Image</label>
 													<div class="col-sm-10">
-														<input type="file" required id="pimage"  class="form-control-file" >
+														<input type="file" accept="image/*"  required id="pimage" name="pimage"  class="form-control-file" >
 													</div>
 												</div>
 												<div class="form-group row">
 													<label for="staticEmail" class="col-sm-2 col-form-label">Package Location</label>
 													<div class="col-sm-10">
-														<input type="text" required id="plocation"  class="form-control" >
+														<input type="text" required id="plocation" name="plocation" class="form-control" >
 													</div>
 												</div>
 												<div class="form-group row">
 													<label for="staticEmail" class="col-sm-2 col-form-label">Package Destination</label>
 													<div class="col-sm-10">
-														<input type="text" required id="pdestination"  class="form-control" >
+														<input type="text" required id="pdestination" name="pdestination"  class="form-control" >
 													</div>
 												</div>
 												<div class="form-group row">
 													<label for="staticEmail" class="col-sm-2 col-form-label">Package Weight</label>
 													<div class="col-sm-10">
-														<input type="text" required id="pweight" placeholder="2.0"  class="form-control" >
+														<input type="text" required id="pweight" name="pweight" placeholder="2.0"  class="form-control" >
 													</div>
 												</div>
 												<div class="form-group row">
 													<label for="staticEmail" class="col-sm-2 col-form-label">Expected Delivery Date</label>
 													<div class="col-sm-10">
-														<input type="text" required id="expected"  class="form-control" >
+														<input type="date" required id="expected" name="expected"  class="form-control" >
 													</div>
 												</div>
 												<div class="form-group row">
 													<label for="staticEmail" class="col-sm-2 col-form-label">Status</label>
 													<div class="col-sm-10">
-														<input type="text" required id="status" placeholder="on Hold"  class="form-control" >
+														<input type="text" required id="status" name="status" placeholder="on Hold"  class="form-control" >
 													</div>
 												</div>
 												
@@ -148,19 +147,19 @@
 											<div class="form-group row">
 													<label for="staticEmail" class="col-sm-2 col-form-label">Name</label>
 													<div class="col-sm-10">
-														<input type="text" required id="sname"  class="form-control" >
+														<input type="text" required id="sname" name="sname"  class="form-control" >
 													</div>
 												</div>
 												<div class="form-group row">
 													<label for="staticEmail" class="col-sm-2 col-form-label">Phone number</label>
 													<div class="col-sm-10">
-														<input type="text" required id="sphone" class="form-control" >
+														<input type="text" required id="sphone" name="sphone"class="form-control" >
 													</div>
 												</div>
 												<div class="form-group row">
 													<label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
 													<div class="col-sm-10">
-														<input type="text" required id="semail"  class="form-control" >
+														<input type="text" required id="semail" name="semail"  class="form-control" >
 													</div>
 												</div>
 										</fieldset>
@@ -170,24 +169,24 @@
 											<div class="form-group row">
 													<label for="staticEmail" class="col-sm-2 col-form-label">Name</label>
 													<div class="col-sm-10">
-														<input type="text" required id="rname"  class="form-control" >
+														<input type="text" required id="rname" name="rname"  class="form-control" >
 													</div>
 												</div>
 												<div class="form-group row">
 													<label for="staticEmail" class="col-sm-2 col-form-label">Phone number</label>
 													<div class="col-sm-10">
-														<input type="text" required id="rphone" class="form-control" >
+														<input type="text" required id="rphone" name="rphone"class="form-control" >
 													</div>
 												</div>
 												<div class="form-group row">
 													<label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
 													<div class="col-sm-10">
-														<input type="text" required id="remail"  class="form-control" >
+														<input type="text" required id="remail" name="remail"  class="form-control" >
 													</div>
 												</div>
 										</fieldset>
                                     <div class="form-group row">
-                                        <input type="submit" value="Add"  name="create" class="form-control btn btn-primary btn-md btn-block" id="save">
+                                        <input type="submit" value="Add"  name="submit" class="form-control btn btn-primary btn-md btn-block" id="save">
                                     </div>
                                     <div class="row">
                                         <div class="alert alert-primary alert-dismissible" id="success" style="display:none;">
@@ -212,59 +211,51 @@
 	
 		<!-- Required jQuery first, then Bootstrap Bundle JS -->
         <script src="js/jquery.min.js"></script>
-		<script src="summernote/summernote.js"></script>
 
             <script>
                 $(document).ready(function()
                 {
-                    $('#save').on('click', function()
+                    $('#create').on('submit', function(e)
                     {
-						
-                        var pname=$('#pname').val();
-                        var pimage=$('#pimage').val();
-                        var plocation=$('#plocation').val();
-                        var pdestination=$('#pdestination').val();
-                        var pweight=$('#pweight').val();
-                        var expected=$('#expected').val();
-                        var status=$('#status').val();
-                        var sname=$('#sname').val();
-                        var sphone=$('#sphone').val();
-						var semail=$('#semail').val();
-						var rname=$('#rname').val();
-                        var rphone=$('#rphone').val();
-                        var remail=$('#remail').val();
+						e.preventDefault();
+						$("#pimage").change(function() {
+							var file = this.files[0];
+							var fileType = file.type;
+							var match = ['image/jpeg', 'image/png', 'image/jpg'];
+							if(!((fileType == match[0]) || (fileType == match[1]) || (fileType == match[2]) || (fileType == match[3]) || (fileType == match[4]) || (fileType == match[5]))){
+								alert('Sorry, only PJPG, JPEG, & PNG files are allowed to upload.');
+								$("#file").val('');
+								return false;
+							}
+						});
 
-                //         $.ajax
-                //         ({
-                //             url: "add.php",
-                //             type: "POST",
-                //             data: 
-                //             {
-                //                 date: date,
-                //                 content: content,
-                //                 sender: sender,
-                //                 destination: destination,
-                //                 contact: contact			
-                //             },
-                //             cache: false,
-                //             success: function(dataResult)
-                //             {
-                //                 var dataResult = JSON.parse(dataResult);
-                //                 if(dataResult.statusCode==200)
-                //                 {
-                //                     $("#save").removeAttr("disabled");
-                //                     $('form').find('input:text').val('');
-                //                     $("#success").show();
-                //                     $('#success').html("Here's the package tracking number : "+dataResult.package_id); 
+                        $.ajax
+                        ({
+                            url: "add.php",
+                            type: "POST",
+                            data:new FormData(this),
+							cache: false,
+							// dataType: 'json',
+							contentType: false,
+						    processData:false,
+                            success: function(dataResult)
+                            {
+                                var dataResult = JSON.parse(dataResult);
+                                if(dataResult.statusCode==200)
+                                {
+                                    $("#save").removeAttr("disabled");
+                                    $('form').find('input:text').val('');
+                                    $("#success").show();
+                                    $('#success').html("Here's the package tracking number : "+dataResult.package_id); 
 
-                //                 }
-                //                 else if(dataResult.statusCode==201)
-                //                 {
-                //                 alert("Error occured !");
-                //                 }
+                                }
+                                else if(dataResult.statusCode==201)
+                                {
+                                alert("Error occured !");
+                                }
                                 
-                //             }
-			    //         });
+                            }
+			            });
                     });
 
                 });
