@@ -10,6 +10,7 @@
                                 <ul>
                                     <li> <a href="index.php">Home</a> </li>
                                     <li> <a href="track.php">Track</a> </li>
+                                    <li> <a href="services.php">Services</a> </li>
                                     <li> <a href="contact.php">Contact</a> </li>
                                     <li> <a href="about.php">About</a> </li>
                                 </ul>
@@ -33,7 +34,7 @@
                                 <p> © Copyright <?php echo date("Y") ?>, All rights reserved </p>                            
                             </div>
                             <div class="col-md-6 col-sm-6 text-right">
-                                <p> Design and <span class="theme-clr fa fa-heart"></span>  by <a href="https://codewarrior.unaux.com" class="main-clr"> Adebayo Mayowa</a> </p>
+                                <p> Design <span class="theme-clr fa fa-heart"></span>  by <a href="https://codewarrior.unaux.com" class="main-clr"> Adebayo Mayowa</a> </p>
                             </div>
                         </div>
                     </div>

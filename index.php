@@ -243,7 +243,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="step-img wow slideInRight" data-wow-offset="50" data-wow-delay=".20s"> <img src="assets/img/block/step-img.png" alt="" /> </div>
+                    <div class="step-img wow slideInRight" data-wow-offset="50" data-wow-delay=".20s"> <img src="assets/img/logo/image2.jpg" alt="" /> </div>
                 </section>
                 <!-- /.Steps -->
 
@@ -259,7 +259,7 @@
                                     <div class="pb-120 hidden-xs"></div>
                                 </div>
                                 <div class="delivery-img pt-10">
-                                    <img alt="" src="assets/img/block/delivery.png" class="wow slideInLeft" data-wow-offset="50" data-wow-delay=".20s"/>
+                                    <img alt="" src="assets/img/logo/image1.jpeg" class="wow slideInLeft" data-wow-offset="50" data-wow-delay=".20s"/>
                                 </div>
                             </div>
                         </div>
@@ -410,10 +410,33 @@
                                 </ul>
                             </div>  
                             <div class="col-sm-12 col-md-6">
-                                <iframe src="" height="400" frameborder="0"></iframe>
+                                <form action="submit" method="post">
+                                    <div class="form-group">
+                                      <label for="">Email</label>
+                                      <input type="text"
+                                        class="form-control" name="Email" id="" aria-describedby="helpId" placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="">Subject</label>
+                                      <input type="text"
+                                        class="form-control" name="Email" id="" aria-describedby="helpId" placeholder="">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="my-textarea">Message</label>
+                                        <textarea id="my-textarea" class="form-control" name="message" rows="3"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="submit" value="Send Message" style="resize:none" class="btn btn-primary">
+                                    </div>
+                                </form>
                             </div>                      
                         </div>
-                    </div>               
+                    </div> 
+                    <div class="theme-container container">
+                        <div class="row">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7918.10341931251!2d3.342695165564108!3d7.120006238484695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a4b7741d9bb27%3A0xd2487a60442a0d41!2sHallmark%20Suites!5e0!3m2!1sen!2sng!4v1609849138172!5m2!1sen!2sng" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>              
                 </section>
                 <!-- /.Contact us -->
             </article>

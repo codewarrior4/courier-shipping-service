@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>EMG - Shipping Services | About Us</title>
+        <title>EMG - Shipping Services | Services</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -36,6 +36,7 @@
           <?php include 'header.php' ?>
 
             <!-- Content Wrapper -->
+            
             <article class="about-page"> 
                 <!-- Breadcrumb -->
                 <section class="theme-breadcrumb pad-50">                
@@ -43,14 +44,14 @@
                         <div class="row">
                             <div class="col-sm-8 pull-left">
                                 <div class="title-wrap">
-                                    <h2 class="section-title no-margin">About us</h2>
-                                    <p class="fs-16 no-margin">Know about us more</p>
+                                    <h2 class="section-title no-margin">Services</h2>
+                                    <p class="fs-16 no-margin">Know the services we render</p>
                                 </div>
                             </div>
                             <div class="col-sm-4">                        
                                 <ol class="breadcrumb-menubar list-inline">
                                     <li><a href="index.php" class="gray-clr">Home</a></li>                                   
-                                    <li class="active">About</li>
+                                    <li class="active">Services</li>
                                 </ol>
                             </div>  
                         </div>
@@ -60,7 +61,7 @@
 
                 <!-- About Us -->
                 <section class="pad-50 about-wrap">
-                    <span class="bg-text"> About </span>
+                    <span class="bg-text"> Services </span>
                     <div class="theme-container container">               
                         <div class="row">
                             <div class="col-md-6">
