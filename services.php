@@ -53,7 +53,7 @@
                                     <li><a href="index.php" class="gray-clr">Home</a></li>                                   
                                     <li class="active">Services</li>
                                 </ol>
-                            </div>  
+                            </div>      
                         </div>
                     </div>
                 </section>
@@ -62,75 +62,58 @@
                 <!-- About Us -->
                 <section class="pad-50 about-wrap">
                     <span class="bg-text"> Services </span>
-                    <div class="theme-container container">               
+                    <section class="pad-30 more-about-wrap">
+                    <div class="theme-container container pb-100">               
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="about-us pt-10">
-                                    <p class="fs-16 wow fadeInUp" data-wow-offset="50" data-wow-delay=".25s">
-                                    EMG Shipping service provides a portfolio of full logistic solutions in Nigeria which includes, but not limited to International and Domestic express delivery, Freight Forwarding, Integrated Logistics Solutions, Information and Document Management Solutions, Warehousing, Packaging Services
-                                    </p>
-                                    <ul class="feature">
-                                        <li> 
-                                            <img alt="" src="assets/img/icons/icon-2.png" class="wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s" /> 
-                                            <div class="feature-content wow rotateInDownRight" data-wow-offset="50" data-wow-delay=".30s"> 
-                                                <h2 class="title-1">Fast delivery</h2> 
-                                                <p>We guarantee on time delivery from USA to Nigeria within 7 - 10 days.</p>                                             
-                                            </div>  
-                                        </li>
-                                        <li> 
-                                            <img alt="" src="assets/img/icons/icon-3.png" class="wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s" /> 
-                                            <div class="feature-content wow rotateInDownRight" data-wow-offset="50" data-wow-delay=".30s"> 
-                                            <h2 class="title-1">Track your shipment</h2> 
-                                                <p>Our operations are supported by real-time web and mobile tracking tools - so you always know where your package is.</p>                                            
-                                            </div>  
-                                        </li>
-                                        <li> 
-                                            <img alt="" src="assets/img/icons/icon-4.png" class="wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s" /> 
-                                            <div class="feature-content wow rotateInDownRight" data-wow-offset="50" data-wow-delay=".30s"> 
-                                            <h2 class="title-1">Great customer service</h2> 
-                                                <p>Our highly trained customer service professionals ensure that every client is thoroughly satisfied.</p>                                            
-                                            </div>  
-                                        </li>
-                                    </ul>
-                                </div>
+                            <div class="col-md-6 col-sm-12 wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s">
+                                 <img src="assets/img/logo/relax.jpg"  class="img-thumbnail" style="width:75%;height:75%" alt="">
                             </div>
-                            <div class="col-md-6 text-center">                                
-                                <img alt="" src="assets/img/block/about-img.png" class="effect animated fadeInRight" />
+                            <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s">
+                            <h2 class="pt-2">GET RELAXED</h2>
+                               <P class="pt-4 text-justified">Our time to time tracking system ensures you feel relaxed. You no longer need to get tensed about your product safety as we deliver it with at most care.</P>
                             </div>
                         </div>
                     </div>
+                    <div class="theme-container container pb-100">               
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s">
+                                 <img src="assets/img/logo/worldwide.jpg"  class="img-thumbnail" style="width:75%;height:75%" alt="">
+                            </div>
+                            <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s">
+                                <h2 class="pt-2">SEND COURIER FROM THE US TO NIGERIA</h2>
+                               <P class="pt-4 text-justified">Simply get an online courier quote, compare our parcel delivery prices, and book a courier collection service that suits your budget. We even offer real time delivery tracking, so you can track your parcel until it’s out for delivery with the courier.</P>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-container container pb-100">               
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s">
+                                 <img src="assets/img/logo/prices.jpg"  class="img-thumbnail" style="width:75%;height:75%" alt="">
+                            </div>
+                            <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s">
+                            <h2 class="pt-2">SCHEDULED SERVICE</h2>
+                               <P class="pt-4 text-justified">Do you have time-sensitive orders that require scheduled times for pickup and delivery? We can help. No matter how many days a week you need scheduled delivery, we can customize our services to accommodate your needs in the most cost-effective way.</P>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="theme-container container pb-100">               
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12 wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s">
+                                 <img src="assets/img/logo/customs.jpg"  class="img-thumbnail" style="width:75%;height:75%" alt="">
+                            </div>
+                            <div class="col-sm-12 col-md-6 wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s">
+                                <h2 class="pt-2">US CUSTOMS PAPERWORK</h2>
+                            <P class="pt-4 text-justified">Most shipments traveling to the UK by courier are subject to duties and tax. However, there are certain types of shipments such as gifts and personal effects *that are not subject to customs charges if they are under a certain value. All non-document shipments exporting from other *countries and *traveling to the US must be accompanied by a customs invoice.</P>
+                            </div>
+                        </div>
+                    </div>  
+                </section>
+                    
                 </section>
                 <!-- /.About Us -->
 
-                <!-- More About Us -->
-                <section class="pad-30 more-about-wrap">
-                    <div class="theme-container container pb-100">               
-                        <div class="row">
-                            <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-offset="50" data-wow-delay=".20s">
-                                <div class="more-about clrbg-before">
-                                    <h2 class="title-1">what we are</h2>
-                                    <div class="pad-10"></div>
-                                    <p>EMG Shipping service is a last-mile fulfillment service that delivers packages especially for e-retailers and online platforms </p>
-                                </div>
-                            </div>
-                            <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-offset="50" data-wow-delay=".30s">
-                                <div class="more-about clrbg-before">
-                                    <h2 class="title-1">Our Vision</h2>
-                                    <div class="pad-10"></div>
-                                    <p>To be Nigeria ’s most favoured logistics service provider, delivering world class service to it’s clients by providing integrated supply chain solutions with a focus on achieving customer success by leveraging on new technologies. </p>
-                                </div>
-                            </div>
-                            <div class="col-md-4  col-sm-4 wow fadeInUp" data-wow-offset="50" data-wow-delay=".40s">
-                                <div class="more-about clrbg-before">
-                                    <h2 class="title-1">our mission</h2>
-                                    <div class="pad-10"></div>
-                                    <p>To continually design and provide best-in-class logistics solutions to deliver sustainable and rewarding value to all stakeholders. And use technology-enabled logistics services supported by excellent customer service to enable commerce and improve lives across Africa.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- /.More About Us -->
+               
             </article>
             <!-- /.Content Wrapper -->
 
