@@ -136,7 +136,7 @@
                             </div>
                             <div class="col-md-6 text-center">
                                 <div class="pb-80 visible-lg"></div>
-                                <img alt="" src="assets/img/block/about-img.png" class="wow slideInRight" data-wow-offset="50" data-wow-delay=".20s" />
+                                <img alt="" src="assets/img/block/image4.jpeg" class="wow slideInRight" data-wow-offset="50" data-wow-delay=".20s" />
                             </div>
                         </div>
                     </div>
@@ -397,19 +397,21 @@
                 <!-- Contact us -->
                 <section class="contact-wrap pad-120">   
                     <span class="bg-text wow fadeInLeft" data-wow-offset="50" data-wow-delay=".20s"> Contact </span>
-                    <div class="theme-container container">               
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12">
+                    <div class="theme-container container mb-3">               
+                        <div class="row ">
+                            <div class="col-md-6 col-sm-12 mb-3">
                                 <div class="title-wrap">
                                     <h2 class="section-title wow fadeInLeft" data-wow-offset="50" data-wow-delay=".20s">contact us</h2>
-                                    <p class="wow fadeInLeft" data-wow-offset="50" data-wow-delay=".20s" >Get in touch with us easiky</p>
+                                    <p class="wow fadeInLeft" data-wow-offset="50" data-wow-delay=".20s" >Get in touch with us easily</p>
                                 </div>
                                 <ul class="contact-detail title-2">
                                     <li class="wow slideInUp" data-wow-offset="50" data-wow-delay=".20s"> <span>Tel Numbers:</span> <br> <a href="tel:+2349077078473" class="gray-clr"> +2349077078473</a> <br> <a href="tel:+2348148148490" class="gray-clr"> +2348148148490 </a></li>
                                     <li class="wow slideInUp" data-wow-offset="50" data-wow-delay=".30s"> <span>Email address:</span> <br> <a href="mailto:eniolamelodyshipping@gmail.com" class="gray-clr"> eniolamelodyshipping@gmail.com </a> </li>
+                                    <li class="wow slideInUp" data-wow-offset="50" data-wow-delay=".30s"> <span>Office address:</span> <br> 63, Olorunsogo, Abeokuta <br> Ogun State, Nigeria. </li>
+
                                 </ul>
                             </div>  
-                            <div class="col-sm-12 col-md-6">
+                            <div class="col-sm-12 col-md-6 mb-3">
                                 <form action="submit" method="post">
                                     <div class="form-group">
                                       <label for="">Email</label>
@@ -434,7 +436,7 @@
                     </div> 
                     <div class="theme-container container">
                         <div class="row">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7918.10341931251!2d3.342695165564108!3d7.120006238484695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a4b7741d9bb27%3A0xd2487a60442a0d41!2sHallmark%20Suites!5e0!3m2!1sen!2sng!4v1609849138172!5m2!1sen!2sng" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.744245719231!2d3.3647152508972287!3d7.155540517451309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a4bc52c15dc75%3A0x3a885c8a064527a0!2s63%20Olorunsogo%2C%20Abeokuta!5e0!3m2!1sen!2sng!4v1609858679898!5m2!1sen!2sng" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
                     </div>              
                 </section>
