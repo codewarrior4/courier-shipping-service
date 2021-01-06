@@ -110,11 +110,11 @@
 										<thead>
 											<tr>
 											  <th> Order Date</th>
+											  <th>Package_id</th>
+											  <th>Name</th>
 											  <th>Sender</th>
-											  <th>Content</th>
-											  <th>Destination</th>
 											  <th>Delivery Date</th>
-											  <th> Package_id</th>
+											  <th> Present Location</th>
 											  <th></th>
 											  </td>
 											</tr>
@@ -123,19 +123,20 @@
 											
 								<?php 
 
-								$contact=mysqli_query($mycon,"SELECT * from courier order by date desc");
+								$contact=mysqli_query($mycon,"SELECT * from courier order by created desc");
 								
 								while($row_contact=mysqli_fetch_array($contact))
 								{
 									echo 
 									'
 									<tr>
-									<td>'.$row_contact['date'].'</td>
-									<td>'.$row_contact['sender'].'</td>
-									<td>'.$row_contact['content'].'</td>
-									<td>'.$row_contact['destination'].'</td>
+									<td>'.$row_contact['created'].'</td>
+									<td>'.$row_contact['pid'].'</td>
+									<td>'.$row_contact['pname'].'</td>
+									<td>'.$row_contact['sname'].'</td>
 									<td>'.$row_contact['expected'].'</td>
-									<td>'.$row_contact['package_id'].'</td>
+									<td>'.$row_contact['plocation'].'</td>
+									
 									<td>&nbsp;&nbsp;<a href="view.php?id='.$row_contact['id'].'"><i class="icon-eye"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="update.php?id='.$row_contact['id'].'"><i class="icon-edit-2"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="delete.php?id='.$row_contact['id'].'"><i class="icon-delete"></i></a>&nbsp;</td>
 								</tr>
 									';

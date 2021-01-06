@@ -186,7 +186,7 @@
 												</div>
 										</fieldset>
                                     <div class="form-group row">
-                                        <input type="submit" value="Add"  name="submit" class="form-control btn btn-primary btn-md btn-block" id="save">
+                                        <input type="submit" value="Add new package"  name="submit" class="form-control btn btn-primary btn-lg btn-block" id="save">
                                     </div>
                                     <div class="row">
                                         <div class="alert alert-primary alert-dismissible" id="success" style="display:none;">
@@ -212,60 +212,58 @@
 		<!-- Required jQuery first, then Bootstrap Bundle JS -->
         <script src="js/jquery.min.js"></script>
 
-            <script>
-                $(document).ready(function()
-                {
-                    $('#create').on('submit', function(e)
-                    {
-						e.preventDefault();
-						$("#pimage").change(function() {
-							var file = this.files[0];
-							var fileType = file.type;
-							var match = ['image/jpeg', 'image/png', 'image/jpg'];
-							if(!((fileType == match[0]) || (fileType == match[1]) || (fileType == match[2]) || (fileType == match[3]) || (fileType == match[4]) || (fileType == match[5]))){
-								alert('Sorry, only PJPG, JPEG, & PNG files are allowed to upload.');
-								$("#file").val('');
-								return false;
+		<script>
+			$(document).ready(function()
+			{
+				$('#create').on('submit', function(e)
+				{
+					$('#save').attr('disabled')
+					$('#save').val('Adding ')
+					e.preventDefault();
+					$("#pimage").change(function() {
+						var file = this.files[0];
+						var fileType = file.type;
+						var match = ['image/jpeg', 'image/png', 'image/jpg'];
+						if(!((fileType == match[0]) || (fileType == match[1]) || (fileType == match[2]) || (fileType == match[3]) || (fileType == match[4]) || (fileType == match[5]))){
+							alert('Sorry, only PJPG, JPEG, & PNG files are allowed to upload.');
+							$("#file").val('');
+							return false;
+						}
+					});
+
+					$.ajax
+					({
+						url: "add.php",
+						type: "POST",
+						data:new FormData(this),
+						cache: false,
+						// dataType: 'json',
+						contentType: false,
+						processData:false,
+						success: function(dataResult)
+						{
+							var dataResult = JSON.parse(dataResult);
+							if(dataResult.statusCode==200)
+							{
+								$("#save").removeAttr("disabled");
+								$('form').find('input:text').val('');
+								$('form').find('input:date').val('');
+								$("#success").show();
+								$('#save').val('Add new Package ')
+								$('#success').html("Here's the package tracking number : "+dataResult.package_id); 
+
 							}
-						});
+							else if(dataResult.statusCode==201)
+							{
+							alert("Error occured !");
+							}
+							
+						}
+					});
+				});
 
-                        $.ajax
-                        ({
-                            url: "add.php",
-                            type: "POST",
-                            data:new FormData(this),
-							cache: false,
-							// dataType: 'json',
-							contentType: false,
-						    processData:false,
-                            success: function(dataResult)
-                            {
-                                var dataResult = JSON.parse(dataResult);
-                                if(dataResult.statusCode==200)
-                                {
-                                    $("#save").removeAttr("disabled");
-                                    $('form').find('input:text').val('');
-                                    $("#success").show();
-                                    $('#success').html("Here's the package tracking number : "+dataResult.package_id); 
-
-                                }
-                                else if(dataResult.statusCode==201)
-                                {
-                                alert("Error occured !");
-                                }
-                                
-                            }
-			            });
-                    });
-
-                });
-            </script>
-
-
-
-
-
-
+			});
+		</script>
 
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/moment.js"></script>

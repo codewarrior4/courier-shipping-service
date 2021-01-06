@@ -12,7 +12,7 @@
 					<!-- sidebar menu start -->
 					<div class="sidebar-menu">
 						<ul>
-							<li class="sidebar-dropdown active">
+							<li>
 								<a href="index.php">
 									<i class="icon-devices_other"></i>
 									<span class="menu-text">Dashboard</span>
@@ -23,12 +23,6 @@
 								<a href="create.php">
 									<i class="icon-edit-3"></i>
 									<span class="menu-text">Create</span>
-								</a>
-							</li>
-							<li>
-								<a href="contact.php">
-									<i class="icon-phone1"></i>
-									<span class="menu-text">Contact us</span>
 								</a>
 							</li>
 							<li>

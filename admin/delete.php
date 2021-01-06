@@ -3,7 +3,7 @@
 
 include 'connect.php';
 $id=$_GET['id'];
-$query=mysqli_query($mycon,"DELETE FROM courier where id like '$id'");
+$query=mysqli_query($mycon,"DELETE FROM courier where id = '$id'");
 
 if ($query)
 {

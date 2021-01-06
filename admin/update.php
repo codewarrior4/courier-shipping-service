@@ -18,21 +18,33 @@
 <html lang="en">
 	
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script data-ad-client="ca-pub-1347938510360945" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<meta name="description" content="Responsive Bootstrap4 Dashboard Template">
-		<meta name="author" content="ParkerThemes">
-		<link rel="shortcut icon" href="img/logocopy.png" />
+	<meta charset="utf-8">
+		<link rel="shortcut icon" href="<?php echo $_SERVER['HTTP_HOST']?>/assets/img/logo/logo.png" type="image/x-icon">
+        <!-- Bootstrap Css -->
+        <meta name="description" content="EMG shipping services is a leading logistics and distribution services company established in 2018. We offer a wide array of express courier and logistic support solutions to our various customers">
 
-		<title>Royal Star Express Express - Admin Dashboard</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta name="keywords" content="Courier Services, emg, shipping,shipping services,emg services,smg shipping services Logistics, mailroom , warehousing , best courier service in Nigeria, logistics company in Nigeria, ecommerce delivery, ecommerce courier service ,local shipment, international shipment, same day delivery , logistics support, konga delivery, jumia delivery , delivery services, delivery service for ecommerce, ecommerce delivery in Nigeria , deal dey delivery, Nigeria logistics company,">
+        <link rel="pingback" href="xmlrpc.php">
+        <meta property="og:url" content="https://<?php echo $_SERVER['HTTP_HOST'] ?>">
+        <meta property="og:title" content="EMG Shipping Services">
+        <meta property="og:description" content="EMG shipping services is a leading logistics and distribution services company established in 2018. We offer a wide array of express courier and logistic support solutions to our various customers ">
+        <meta property="og:site_name" content="EMG Shipping Services">
+        <meta property="og:image" content="<?php echo $_SERVER['HTTP_HOST']?>/assets/img/logo/logo.png">
+        <meta property="og:image:width" content="1500"/>
+        <meta property="og:image:height" content="249"/>
+        <meta itemprop="name" content="EMG Shipping Services"/>
+        <meta itemprop="url" content="https://<?php echo $_SERVER['HTTP_HOST'] ?>"/>
+        <meta itemprop="description" content="Courier Services, emg, shipping,shipping services,emg services,smg shipping services Logistics, mailroom , warehousing , best courier service in Nigeria, logistics company in Nigeria, ecommerce delivery, ecommerce courier service ,local shipment, international shipment, same day delivery , logistics support, konga delivery, jumia delivery , delivery services, delivery service for ecommerce, ecommerce delivery in Nigeria , deal dey delivery, Nigeria logistics company,"/>
+        <meta name="twitter:title" content="EMG Shipping Services"/>
+        <meta name="twitter:url" content="https://<?php echo $_SERVER['HTTP_HOST'] ?>"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:description" content="EMG shipping services is a leading logistics and distribution services company established in 2018. We offer a wide array of express courier and logistic support solutions to our various customers"/>
+
+		<title>EMG Shipping Services - Admin Dashboard</title>
+
 		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="summernote/summernote.css">
-
 		<!-- Icomoon Font Icons css -->
-        <link rel="stylesheet" href="fonts/style.css">
-        
+		<link rel="stylesheet" href="fonts/style.css">
 		<!-- Main css -->
 		<link rel="stylesheet" href="css/main.css">
 
@@ -86,82 +98,112 @@
 									<div class="card-title"><h1>Update package</h1></div>
 								</div>
 								<div class="card-body">
-									<form method="post">
-                                        <div class="form-group row">
-                                            <label for="staticEmail" class="col-sm-2 col-form-label">Sender Name</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" required name="sender" id="sender" value="<?php echo $row_contact['sender']?>" class="form-control" >
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="form-group row">
-                                            <label for="inputPassword" class="col-sm-2 col-form-label">Package Details</label>
-                                            <div class="col-sm-10">
-                                                
-											<textarea name="content" id="summernote" cols="30" rows="10" class="form-control"><?php echo $row_contact['content']?></textarea>
+									<form id="create">
+										<fieldset>
+											<legend>Package Information</legend>
+												<div class="form-group row">
+													<label for="staticEmail" class="col-sm-2 col-form-label">Package Name</label>
+													<div class="col-sm-10">
+														<input type="text" required id="pname" name="pname" value="<?= $row_contact['pname']?>"  class="form-control" >
+														<input type="hidden" name="pid" id="pid" value="<?=$row_contact['pid']?>">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label for="staticEmail" class="col-sm-2 col-form-label">Package Location</label>
+													<div class="col-sm-10">
+														<input type="text" required id="plocation" name="plocation" class="form-control" value="<?= $row_contact['plocation']?>">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label for="staticEmail" class="col-sm-2 col-form-label">Package Destination</label>
+													<div class="col-sm-10">
+														<input type="text" required id="pdestination" name="pdestination"  class="form-control" value="<?= $row_contact['pdestination']?>">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label for="staticEmail" class="col-sm-2 col-form-label">Package Coming from</label>
+													<div class="col-sm-10">
+														<input type="text" required id="pfrom" name="pfrom"  class="form-control" value="<?= $row_contact['pfrom']?>">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label for="staticEmail" class="col-sm-2 col-form-label">Package Weight</label>
+													<div class="col-sm-10">
+														<input type="text" required id="pweight" name="pweight" placeholder="2.0"  class="form-control" value="<?= $row_contact['weight']?>">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label for="staticEmail" class="col-sm-2 col-form-label">Expected Delivery Date</label>
+													<div class="col-sm-10">
+														<input type="date" required id="expected" name="expected"  class="form-control" value="<?= $row_contact['expected']?>">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label for="staticEmail" class="col-sm-2 col-form-label">Status</label>
+													<div class="col-sm-10">
+														<input type="text" required id="status" name="status" placeholder="on Hold"  class="form-control" value="<?= $row_contact['pstatus']?>">
+													</div>
+												</div>
+												
+										</fieldset>
+								
+                                    
+										<fieldset>
+											<legend>Sender's Information</legend>
+											<div class="form-group row">
+													<label for="staticEmail" class="col-sm-2 col-form-label">Name</label>
+													<div class="col-sm-10">
+														<input type="text" required id="sname" name="sname" value="<?= $row_contact['sname']?>" class="form-control" >
+													</div>
+												</div>
+												<div class="form-group row">
+													<label for="staticEmail" class="col-sm-2 col-form-label">Phone number</label>
+													<div class="col-sm-10">
+														<input type="text" required id="sphone" value="<?= $row_contact['sphone']?>" name="sphone"class="form-control" >
+													</div>
+												</div>
+												<div class="form-group row">
+													<label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+													<div class="col-sm-10">
+														<input type="text" required id="semail" name="semail"  class="form-control" value="<?= $row_contact['semail']?>">
+													</div>
+												</div>
+										</fieldset>
 
-                                            
-                                            </div>
+										<fieldset>
+											<legend>Reciever's Information</legend>
+											<div class="form-group row">
+													<label for="staticEmail" class="col-sm-2 col-form-label">Name</label>
+													<div class="col-sm-10">
+														<input type="text" required id="rname" name="rname" value="<?= $row_contact['rname']?>" class="form-control" >
+													</div>
+												</div>
+												<div class="form-group row">
+													<label for="staticEmail" class="col-sm-2 col-form-label">Phone number</label>
+													<div class="col-sm-10">
+														<input type="text" required id="rphone" name="rphone"class="form-control" value="<?= $row_contact['rphone']?>">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+													<div class="col-sm-10">
+														<input type="text" required id="remail" name="remail"  class="form-control" value="<?= $row_contact['remail']?>">
+													</div>
+												</div>
+										</fieldset>
+                                    <div class="form-group row">
+                                        <input type="submit" value="Update package"  name="submit" class="form-control btn btn-primary btn-lg btn-block" id="save">
+                                    </div>
+									<div class="row">
+                                        <div class="alert alert-primary alert-dismissible" id="success" style="display:none;">
+                                         <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
                                         </div>
-
-                                        <div class="form-group row">
-                                            <label for="staticEmail" class="col-sm-2 col-form-label">Expected Delivery Date</label>
-                                            <div class="col-sm-10">
-                                                <input type="date" value="<?php echo $row_contact['expected']?>" name="date" id="date" required class="form-control" >
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="form-group row">
-                                            <label for="staticEmail" class="col-sm-2 col-form-label">Destination</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" name="destination" value="<?php echo $row_contact['destination']?>" id="destination" required class="form-control" >
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="form-group row">
-                                            <label for="staticEmail" class="col-sm-2 col-form-label">Contact</label>
-                                            <div class="col-sm-10">
-                                                <input type="text" value="<?php echo $row_contact['contact']?>" name="contact" id="contact" required class="form-control" >
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label for="staticEmail" class="col-sm-2 col-form-label">Status</label>
-                                            <div class="col-sm-10">
-											<textarea name="status" id="status" cols="30" rows="10" class="summernote form-control"><?php echo $row_contact['status']?></textarea>
-                                                
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <input type="submit" name="update" value="UPDATE" name="create" class="form-control btn btn-primary btn-md btn-block" >
-                                        </div>
+                                    </div>
                                     </form>
-                                    <?php 
-                                        if(isset($_POST['update']))
-                                        {
-                                            $sender=$_POST['sender'];
-                                            $content=addslashes($_POST['content']);
-                                            $destination=$_POST['destination'];
-                                            $expected=$_POST['date'];
-                                            $contact=$_POST['contact'];
-                                            $status=addslashes($_POST['status']);
 
-                                            $updated=mysqli_query($mycon,"UPDATE courier set sender='$sender',content='$content',destination='$destination',expected='$expected',contact='$contact',status='$status' where id = '$id'");
 
-                                            if($updated)
-                                            {
-                                                echo '<script>alert("Updated Successfully");</script>';
-                                                echo '<script>window.location="index.php";</script>';
-                                            }
-                                            else
-                                            {
-                                                echo mysqli_error($updated);
-                                            }
-                                        }
-                                    ?>
-    <?php }?>
 								</div>
+								<?php }?>
 							</div>
 						</div>
 						
@@ -176,30 +218,47 @@
 	
 		<!-- Required jQuery first, then Bootstrap Bundle JS -->
         <script src="js/jquery.min.js"></script>
-        
-         	<script src="summernote/summernote.js"></script>
-	
+		
 		<script>
-			$(document).ready(function(){
+			$(document).ready(function()
+			{
+				$('#create').on('submit', function(e)
+				{
+					$('#save').attr('disabled')
+					$('#save').val('Updating ')
+					e.preventDefault();
+					
 
-				 $('#summernote').summernote({
-                    height: 120,                 // set editor height
-                    minHeight: null,             // set minimum height of editor
-                    maxHeight: null,             // set maximum height of editor
-                    focus: false                 // set focus to editable area after initializing summernote
-				});	
-				$('.summernote').summernote({
-                    height: 120,                 // set editor height
-                    minHeight: null,             // set minimum height of editor
-                    maxHeight: null,             // set maximum height of editor
-                    focus: false                 // set focus to editable area after initializing summernote
-                });				
+					$.ajax
+					({
+						url: "updatepackage.php",
+						type: "POST",
+						data:new FormData(this),
+						cache: false,
+						contentType: false,
+						processData:false,
+						success: function(dataResult)
+						{
+							var dataResult = JSON.parse(dataResult);
+							if(dataResult.statusCode==200)
+							{
+								$("#save").removeAttr("disabled");
+								$("#success").show();
+								$('#save').val('Update Package ')
+								$('#success').html("Package Successfully Updated: "); 
+
+							}
+							else if(dataResult.statusCode==201)
+							{
+							alert("Error occured !");
+							}
+							
+						}
+					});
+				});
+
 			});
-			</script>
-
-
-
-
+		</script>
 
 
 

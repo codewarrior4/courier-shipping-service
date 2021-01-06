@@ -7,14 +7,29 @@
 <html lang="en">
 	
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<script data-ad-client="ca-pub-1347938510360945" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<meta name="description" content="Responsive Bootstrap4 Dashboard Template">
-		<meta name="author" content="ParkerThemes">
-		<link rel="shortcut icon" href="img/logocopy.png" />
+	<meta charset="utf-8">
+		<link rel="shortcut icon" href="<?php echo $_SERVER['HTTP_HOST']?>/assets/img/logo/logo.png" type="image/x-icon">
+        <!-- Bootstrap Css -->
+        <meta name="description" content="EMG shipping services is a leading logistics and distribution services company established in 2018. We offer a wide array of express courier and logistic support solutions to our various customers">
 
-		<title>Royal Star Express Express - Admin Dashboard</title>
+        <meta name="keywords" content="Courier Services, emg, shipping,shipping services,emg services,smg shipping services Logistics, mailroom , warehousing , best courier service in Nigeria, logistics company in Nigeria, ecommerce delivery, ecommerce courier service ,local shipment, international shipment, same day delivery , logistics support, konga delivery, jumia delivery , delivery services, delivery service for ecommerce, ecommerce delivery in Nigeria , deal dey delivery, Nigeria logistics company,">
+        <link rel="pingback" href="xmlrpc.php">
+        <meta property="og:url" content="https://<?php echo $_SERVER['HTTP_HOST'] ?>">
+        <meta property="og:title" content="EMG Shipping Services">
+        <meta property="og:description" content="EMG shipping services is a leading logistics and distribution services company established in 2018. We offer a wide array of express courier and logistic support solutions to our various customers ">
+        <meta property="og:site_name" content="EMG Shipping Services">
+        <meta property="og:image" content="<?php echo $_SERVER['HTTP_HOST']?>/assets/img/logo/logo.png">
+        <meta property="og:image:width" content="1500"/>
+        <meta property="og:image:height" content="249"/>
+        <meta itemprop="name" content="EMG Shipping Services"/>
+        <meta itemprop="url" content="https://<?php echo $_SERVER['HTTP_HOST'] ?>"/>
+        <meta itemprop="description" content="Courier Services, emg, shipping,shipping services,emg services,smg shipping services Logistics, mailroom , warehousing , best courier service in Nigeria, logistics company in Nigeria, ecommerce delivery, ecommerce courier service ,local shipment, international shipment, same day delivery , logistics support, konga delivery, jumia delivery , delivery services, delivery service for ecommerce, ecommerce delivery in Nigeria , deal dey delivery, Nigeria logistics company,"/>
+        <meta name="twitter:title" content="EMG Shipping Services"/>
+        <meta name="twitter:url" content="https://<?php echo $_SERVER['HTTP_HOST'] ?>"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:description" content="EMG shipping services is a leading logistics and distribution services company established in 2018. We offer a wide array of express courier and logistic support solutions to our various customers"/>
+
+		<title>EMG Shipping Services - Admin Dashboard</title>
 
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<!-- Icomoon Font Icons css -->
@@ -77,19 +92,27 @@
 											
 								<?php 
                                 $id=$_GET['id'];
-								$contact=mysqli_query($mycon,"SELECT * from courier where id like '%$id%'");
+								$contact=mysqli_query($mycon,"SELECT * from courier where id = '$id'");
 								
 								while($row_contact=mysqli_fetch_array($contact))
 								{
 									echo 
 									'
-									<tr><td>Tracking Number:</td>	<td>'.$row_contact['package_id'].'</td></tr>
-									<tr><td>Sender:</td><td>'.$row_contact['sender'].'</td></tr>
-									<tr><td>Package:</td><td>'.$row_contact['content'].'</td></tr>
-									<tr><td>Destination:</td><td>'.$row_contact['destination'].'</td></tr>
+									<tr><td>Tracking Number:</td>	<td>'.$row_contact['pid'].'</td></tr>
+									<tr><td>Product Name:</td>	<td>'.$row_contact['pname'].'</td></tr>
+									<tr><td>Product Image:</td>	<td><img src="img/package/'.$row_contact['pimage'].'" width="100" height="100"></td></tr>
+									<tr><td>Product Location:</td>	<td>'.$row_contact['plocation'].'</td></tr>
+									<tr><td>Product Destination:</td>	<td>'.$row_contact['pdestination'].'</td></tr>
+									<tr><td>Product Coming From:</td>	<td>'.$row_contact['pfrom'].'</td></tr>
+									<tr><td>Product Status:</td>	<td>'.$row_contact['pstatus'].'</td></tr>
+									<tr><td>Sender Name:</td>	<td>'.$row_contact['sname'].'</td></tr>
+									<tr><td>Sender Phone:</td>	<td>'.$row_contact['sphone'].'</td></tr>
+									<tr><td>Sender Email:</td>	<td>'.$row_contact['semail'].'</td></tr>
+									<tr><td>Reciever Name:</td><td>'.$row_contact['rname'].'</td></tr>
+									<tr><td>Reciever Phone:</td><td>'.$row_contact['rphone'].'</td></tr>
+									<tr><td>Reciever Email:</td><td>'.$row_contact['remail'].'</td></tr>
 									<tr><td>Expected Delivery Date:</td><td>'.$row_contact['expected'].'</td></tr>
-									<tr><td>Status:</td><td>'.$row_contact['status'].$row_contact['status1'].'</td></tr>
-									<tr><td>Date Sent:</td><td>'.$row_contact['date'].'</td></tr>
+									<tr><td>Date Sent:</td><td>'.$row_contact['created'].'</td></tr>
 									
 								</tr>
 									';
