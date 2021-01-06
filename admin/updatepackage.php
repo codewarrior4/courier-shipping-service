@@ -24,7 +24,6 @@
     
         if ($query)
         {
-           
 		    echo json_encode(array("statusCode"=>200));
 	    } 
         else
