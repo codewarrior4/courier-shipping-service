@@ -195,8 +195,7 @@
                             <div class="row px-3">
                                 <div class="col">
                                     <div class="progress" style="height:20px">
-                                        <div class="progress-bar bg-primary" id="progress" role="progressbar" style="width: 25%;"
-                                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        <div class="progress-bar" id="progress" role="progressbar"></div>
                                     </div>
                                 </div>
                             </div>
@@ -259,38 +258,40 @@
                                 $("#plocation").html(dataResult.plocation)
                                 $("#pexpected").html(dataResult.expected)
                                 $("#status").html(dataResult.status)
+                                
                                 if(dataResult.status =="Shipment information sent to Emgss" || dataResult.status =="Picked up")
                                 {
-                                    $("#progress").css("width","20%")
+                                    $("#progress").css({"width":"20%","background-color":"black"})
+                                    $("#progress").attr("class","progress-bar")
                                     $("#progress").html(dataResult.status)
                                 }
                                 else if(dataResult.status =="At local emgss facility" || dataResult.status=="Left emgss origin facility")
                                 {
-                                    $("#progress").css("width","40%")
+                                    $("#progress").css({"width":"40%","background-color":"#e69f00"})
                                     $("#progress").html(dataResult.status)
 
                                 }
                                 else if(dataResult.status =="In transit")
                                 {
-                                    $("#progress").css("width","50%")
+                                    $("#progress").css({"width":"50%","background-color":"#e69f00"})
                                     $("#progress").html(dataResult.status)
 
                                 }
                                 else if(dataResult.status =="On Emgss vehicle for delivery" || dataResult.status=="Clearance delay (International orders)")
                                 {
-                                    $("#progress").css("width","65%")
+                                    $("#progress").css({"width":"60%","background-color":"#e69f00"})
                                     $("#progress").html(dataResult.status)
 
                                 }
                                 else if(dataResult.status =="Customer not available or business closed (For more information, please contact Emgss customer service.)" || dataResult.status=="Business closed - No delivery attempt (For more information, please contact Emgss customer service.)" || dataResult.status=="Customs delay (For more information, please contact Emgss customer service.)" || dataResult.status=="Holiday (For more information, please contact Emgss customer service.)" || dataResult.status=="Missing documentation. (For more information, please contact Emgss customer service.)")
                                 {
-                                    $("#progress").css("width","85%")
+                                    $("#progress").css({"width":"85%","background-color":"#e40000"})
                                     $("#progress").html(dataResult.status)
 
                                 }
                                 else if(dataResult.status =="Delivered")
                                 {
-                                    $("#progress").css("width","100%")
+                                    $("#progress").css({"width":"100%","background-color":"#18800c"})
                                     $("#progress").html(dataResult.status)
 
                                 }
