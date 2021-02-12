@@ -245,10 +245,12 @@
 							{
 								$("#save").removeAttr("disabled");
 								$('form').find('input:text').val('');
-								$('form').find('input:date').val('');
 								$("#success").show();
-								$('#save').val('Add new Package ')
 								$('#success').html("Here's the package tracking number : "+dataResult.package_id); 
+								// $('form').find('input:date').val('');
+								
+								$('#save').val('Add new Package ')
+								
 
 							}
 							else if(dataResult.statusCode==201)
